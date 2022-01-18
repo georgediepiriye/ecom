@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import {sliderItems} from "../sliderData"
+import { useState } from "react";
 
 const Container = styled.div`
     width: 100%;
@@ -27,9 +29,13 @@ const Arrow = styled.div`
     right: ${props=> props.direction ==="right" && "10px"};
     cursor: pointer;
     opacity: 0.5;
+    z-index: 2;
 `
 const Wrapper = styled.div`
     height: 100%;
+    display: flex;
+    transition: all 1.5s ease;
+    transform: translateX(${props=>props.sliderIndex * -100}vw);
 `
 const Slide = styled.div`
     display: flex;
@@ -69,44 +75,38 @@ const Button = styled.button`
 `
 
 const Slider = () => {
+
+    const [sliderIndex, setsliderIndex] = useState(0)
+    const handleClick = (direction)=>{
+        if(direction==="left"){
+            setsliderIndex(sliderIndex > 0 ? sliderIndex - 1 : 2)
+        }else{
+            setsliderIndex(sliderIndex < 2 ? sliderIndex + 1 : 0)
+        }
+    }
     return (
         <Container>
-           <Arrow direction="left">
+           <Arrow direction="left" onClick={()=>handleClick("left")}>
               <ArrowBackIosOutlinedIcon/>
            </Arrow>
-           <Wrapper>
-               <Slide>
-                   <ImageContainer>
-                      <Image src="https://images.unsplash.com/photo-1626249466753-8b4d83c439c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"/>
-                   </ImageContainer>
-                   <InfoContainer>
-                       <Title>SUMMER SALE</Title>
-                       <Desc>DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS.</Desc>
-                       <Button>SHOP NOW</Button>
-                   </InfoContainer>
-               </Slide>
-               <Slide>
-                   <ImageContainer>
-                      <Image src="https://images.unsplash.com/photo-1631415323509-7e870d79cabc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb24lMjBtb2RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
-                   </ImageContainer>
-                   <InfoContainer>
-                       <Title>SUMMER SALE</Title>
-                       <Desc>DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS.</Desc>
-                       <Button>SHOP NOW</Button>
-                   </InfoContainer>
-               </Slide>
-               <Slide>
-                   <ImageContainer>
-                      <Image src="https://images.unsplash.com/photo-1624494077091-be8afe852839?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"/>
-                   </ImageContainer>
-                   <InfoContainer>
-                       <Title>SUMMER SALE</Title>
-                       <Desc>DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS.</Desc>
-                       <Button>SHOP NOW</Button>
-                   </InfoContainer>
-               </Slide>
+           <Wrapper sliderIndex={sliderIndex}>
+               {sliderItems.map((item)=>{
+                return    <Slide>
+                    <ImageContainer>
+                       <Image src={item.img}/>
+                    </ImageContainer>
+                    <InfoContainer>
+                        <Title>{item.title}</Title>
+                        <Desc>{item.desc}</Desc>
+                        <Button>SHOP NOW</Button>
+                    </InfoContainer>
+                </Slide>
+
+               })}
+              
+             
            </Wrapper>
-           <Arrow direction="right">
+           <Arrow direction="right" onClick={()=>handleClick("right")}>
               <ArrowForwardIosOutlinedIcon/>
            </Arrow>
         </Container>

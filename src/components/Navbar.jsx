@@ -68,7 +68,7 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>ECOM.ng</Logo>
+                    <Logo>TRENDS.ng</Logo>
                 </Center>
                 <Right>
                     <MenuItem>Register</MenuItem>
