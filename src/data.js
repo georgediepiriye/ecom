@@ -41,3 +41,41 @@ export  const categories = [
     },
     
 ]
+
+export const popularProducts = [
+    {
+        id:1,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/35/930728/1.jpg?3873",
+    },
+    {
+        
+        id:2,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/633467/1.jpg?2310",
+    },
+    {
+        id:3,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/81/734466/1.jpg?8212",
+    },
+    {
+        id:4,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/788717/1.jpg?2110",
+    },
+    {
+        id:5,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/83/849377/1.jpg?2562",
+    },
+    {
+        id:6,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/887887/1.jpg?3162",
+    },
+    {
+   
+        id:7,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/05/412202/1.jpg?3062",
+    },
+    { 
+    
+        id:8,
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/94/511178/1.jpg?5891",
+    }
+]
