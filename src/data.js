@@ -19,3 +19,25 @@ export  const sliderItems = [
     },
     
 ]
+
+export  const categories = [
+    {
+        id: 1,
+        img:"https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+        title:"SHIRT STYLE!",
+        
+    },
+    {
+        id: 2,
+        img:"https://images.unsplash.com/photo-1552358155-515e264cb8b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        title:"CASUALS",
+
+    },
+    {
+        id: 3,
+        img:"https://images.unsplash.com/photo-1631086960281-4590ca88dcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZhc2hpb24lMjBtZW4lMjBqYWNrZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        title:"LIGHT JACKETS",
+      
+    },
+    
+]

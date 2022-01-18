@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import {sliderItems} from "../sliderData"
+import {sliderItems} from "../data"
 import { useState } from "react";
 
 const Container = styled.div`
