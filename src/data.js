@@ -7,7 +7,7 @@ export  const sliderItems = [
     },
     {
         id: 2,
-        img:"https://images.unsplash.com/photo-1631415323509-7e870d79cabc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb24lMjBtb2RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        img:"https://images.unsplash.com/photo-1589465885857-44edb59bbff2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         title:"AUTUMN COLLECTION",
         desc: "DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS."
     },
@@ -29,13 +29,13 @@ export  const categories = [
     },
     {
         id: 2,
-        img:"https://images.unsplash.com/photo-1552358155-515e264cb8b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        img:"https://images.unsplash.com/photo-1616467808099-b5daecc2547f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGJsYWNrJTIwd29tYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         title:"CASUALS",
 
     },
     {
         id: 3,
-        img:"https://images.unsplash.com/photo-1631086960281-4590ca88dcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZhc2hpb24lMjBtZW4lMjBqYWNrZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        img:"https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjBmYXNoaW9uJTIwamFja2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         title:"LIGHT JACKETS",
       
     },
@@ -50,7 +50,7 @@ export const popularProducts = [
     {
         
         id:2,
-        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/633467/1.jpg?2310",
+        img:"https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/380928/1.jpg?6907",
     },
     {
         id:3,

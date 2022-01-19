@@ -16,7 +16,7 @@ const Title = styled.h1`
     margin-bottom: 20px;
 `
 
-const Desc = styled.div`
+const Desc = styled.p`
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
