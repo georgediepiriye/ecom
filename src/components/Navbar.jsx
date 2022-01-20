@@ -36,6 +36,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
     border: none;
+    flex:8;
 `
 const Center = styled.div`
     flex: 1;
