@@ -6,11 +6,16 @@ import Navbar from '../components/Navbar'
 import Newsletter from '../components/Newsletter'
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import { mobile } from '../responsive'
 
 const Container = styled.div``
 const Wrapper = styled.div`
     margin: 30px;
     padding: 20px;
+    ${mobile({
+       padding: "10px",
+    
+   })}
 `
 
 const Title = styled.h1`
@@ -26,7 +31,11 @@ const Top = styled.div`
     padding: 20px;
 `
 const TopTexts = styled.div`
-    
+       ${mobile({
+       display: "none",
+      
+       
+   })}
 `
 
 const TopText = styled.span`
@@ -41,11 +50,19 @@ const TopButton = styled.button`
     border: ${props=>props.type === "filled" && "none"};
     background-color: ${props=>props.type === "filled" ? "black" : "transparent"};
     color:${props=>props.type === "filled"  && "white"};
+    ${mobile({
+       marginRight: "20px",
+       
+   })}
 `
 
 const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({
+       flexDirection: "column",
+       
+   })}
 
 `
 
@@ -55,6 +72,10 @@ const Info = styled.div`
 const Product = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({
+       width: "75%",
+       flexDirection: "column"
+   })}
 `
 const Hr = styled.hr`
     background-color: #eee;
@@ -67,6 +88,12 @@ const ProductDetails= styled.div`
 `
 const Image = styled.img`
     width: 200px;
+    ${mobile({
+      width:"20px",
+      height: "40px"
+
+       
+   })}
 `
 const Details = styled.div`
     display: flex;
@@ -104,10 +131,18 @@ const ProductAmountContainer= styled.div`
 const ProductAmount= styled.span`
     font-size: 24px;
     margin: 5px;
+    ${mobile({
+       margin: "5px 15px",
+     
+   })}
 `
 const ProductPrice= styled.span`
     font-size: 30px;
     font-weight: 400;
+    ${mobile({
+       marginBottom: "20px",
+     
+   })}
 `
 
 

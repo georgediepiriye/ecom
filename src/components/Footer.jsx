@@ -4,12 +4,28 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocalPhoneOutlined from '@mui/icons-material/LocalPhoneOutlined';
+import { mobile } from '../responsive';
+
+const MainContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+const Copywrite = styled.div`
+    text-align: center;
+    border: 1px solid lightgray;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 12px;
+`
 
 const Container = styled.div`
     display: flex;
+    ${mobile({
+       flexDirection: "column",
+   })}
 `
 
 const Left = styled.div`
@@ -47,7 +63,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
      flex: 1;
      padding: 20px;
-    
+     ${mobile({
+       display: "none"
+   })}
 `
 
 const Title = styled.h3`
@@ -70,6 +88,11 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    ${mobile({
+       backgroundColor: "#f3eded"
+   })}
     
 `
 const ContactItem=styled.div`
@@ -85,7 +108,9 @@ const Payment=styled.img`
 
 const Footer = () => {
     return (
-        <Container>
+
+        <MainContainer>
+            <Container>
             <Left>
                 <Logo>TRENDS.ng</Logo>
                 <Desc>
@@ -131,7 +156,10 @@ const Footer = () => {
 
             </Right>
 
-        </Container>
+            </Container>
+            <Copywrite>©GD</Copywrite>
+        </MainContainer>
+       
     )
 }
 

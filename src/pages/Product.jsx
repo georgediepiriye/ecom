@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 import Newsletter from "../components/Newsletter";
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     
@@ -13,6 +14,11 @@ const Wrapper = styled.div`
     margin: 30px;
     padding: 50px;
     display: flex;
+    ${mobile({
+       flexDirection: "column",
+       padding:"10px"
+
+   })}
 `
 
 const ImageContainer= styled.div`
@@ -24,13 +30,20 @@ const ImageContainer= styled.div`
 `
 
 const Image = styled.img`
-   
+      ${mobile({
+       height: "40vh",
+       
+   })}
 
 `
 
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0px 50px;
+    ${mobile({
+       padding: "10px",
+
+   })}
 `
 
 const Title = styled.h1`
@@ -50,6 +63,10 @@ const FilterContainer = styled.div`
     justify-content: space-between;
     width: 50%;
     margin: 30px 0px ;
+    ${mobile({
+       width: "100%",
+       
+   })}
 `
 
 const Filter = styled.div`
@@ -84,6 +101,10 @@ const AddContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({
+       width: "100%",
+       
+   })}
 `
 
 const AmountContainer = styled.div`
